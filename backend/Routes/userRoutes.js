@@ -1,5 +1,5 @@
 import express from 'express'
-import User from '../Model/User';
+import User from '../Model/User.js';
 
 const router = express.Router();
 
@@ -32,7 +32,7 @@ router.post("/" , async (req , res)=>{
 
 router.get("/" , async (req , res)=>{
     try{
-        const userExist = await UserFind();
+        const userExist = await User.Find();
         res.status(200).json({message:"all users"})
 
 }catch(err){
