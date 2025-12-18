@@ -13,4 +13,4 @@ app.get("/" , (req , res)=>{`server runing at port ${process.env.PORT}`})
 app.use("api/users" , userRoutes);
 const port = process.env.PORT || 5000
 
-app.listen(port , ()=>{console.log("port is listening");}) i have this in server.js still not working why?
+app.listen(port , ()=>{console.log("port is listening");})
